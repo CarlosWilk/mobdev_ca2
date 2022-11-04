@@ -22,15 +22,6 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'people',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../people/people.module').then( m => m.PeoplePageModule)
-          }
-        ]
-      },
-      {
         path: 'planets',
         children: [
           {
