@@ -1,0 +1,11 @@
+.specie-card {
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(38, 38, 39, 0.25);
+    border-radius: 0.6rem;
+    background-color: var(--ion-color-secondary);
+    padding: 0.2rem;
+    width: max-content;
+}
+.specie-info {
+    --background: #28b2cd;
+}

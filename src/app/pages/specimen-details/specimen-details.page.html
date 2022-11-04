@@ -1,14 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>specimen-details</ion-title>
+    <ion-buttons slot="start" defaultHref="/tabs/species">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>{{species.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card *ngIf="starship">
-    <ion-card-content>
-      Name: {{ species.name }}
-    </ion-card-content>
+  <ion-card *ngIf="species" class="specie-info">
     <ion-card-content>
       Classification: {{ species.classification }}
     </ion-card-content>

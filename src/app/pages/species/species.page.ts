@@ -18,10 +18,10 @@ export class SpeciesPage implements OnInit {
     this.species = this.http.get('https://swapi.dev/api/species');
   }
 
-  openDetails(species) {
-    let split = species.url.split('/');
-    let speciesId = split[split.length-2];
-    this.router.navigateByUrl(`/tabs/species/${speciesId}`);
+  openDetails(specie) {
+    let split = specie.url.split('/');
+    let specieId = split[split.length-2];
+    this.router.navigateByUrl(`/tabs/species/${specieId}`);
     }
 
 

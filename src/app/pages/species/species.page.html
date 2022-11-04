@@ -1,13 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>species</ion-title>
+    <ion-title>{{species.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item button detail lines="inset" *ngFor="let specie of (species | async)?.results" (click)="openDetails(species)">
-    {{ species.name }}
+    <ion-item button detail lines="inset" *ngFor="let specie of (species | async)?.results" (click)="openDetails(specie)">
+    {{ specie.name }}
     </ion-item>
     </ion-list>
 </ion-content>
