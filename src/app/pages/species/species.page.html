@@ -5,5 +5,9 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item button detail lines="inset" *ngFor="let specie of (species | async)?.results" (click)="openDetails(species)">
+    {{ species.name }}
+    </ion-item>
+    </ion-list>
 </ion-content>

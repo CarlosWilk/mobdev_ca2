@@ -29,9 +29,7 @@ const routes: Routes = [
             loadChildren: () => import('../planets/planets.module').then( m => m.PlanetsPageModule)
           }
         ]
-      }
-    ]
-  },
+      },
   {
     path: 'species',
     children: [
@@ -57,7 +55,9 @@ const routes: Routes = [
       loadChildren: () => import('../spaceship-details/spaceship-details.module').then( m => m.SpaceshipDetailsPageModule)
     }
   ]
-},
+}
+    ]
+  },
   {
     path: '',
     redirectTo: '/tabs/films',

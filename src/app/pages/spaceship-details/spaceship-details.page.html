@@ -1,9 +1,18 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" defaultHref="/tabs/spaceships">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
     <ion-title>spaceship-details</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+<ion-card *ngIf="starship">
+<ion-card-content>
+{{ starship.name }}
+</ion-card-content>
 
 </ion-content>
