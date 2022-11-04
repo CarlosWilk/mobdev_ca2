@@ -5,5 +5,19 @@
 </ion-header>
 
 <ion-content>
+  <ion-card *ngIf="starship">
+    <ion-card-content>
+      Name: {{ species.name }}
+    </ion-card-content>
+    <ion-card-content>
+      Classification: {{ species.classification }}
+    </ion-card-content>
+    <ion-card-content>
+      Average height: {{ species.average_height }}
+    </ion-card-content>
+    <ion-card-content>
+      Life-span: {{ species.average_lifespan}}
+    </ion-card-content>
 
+  </ion-card>
 </ion-content>

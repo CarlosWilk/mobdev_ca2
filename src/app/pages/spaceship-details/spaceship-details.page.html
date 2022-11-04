@@ -4,15 +4,25 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
 
-    <ion-title>spaceship-details</ion-title>
+    <ion-title>{{ starship.name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-<ion-card *ngIf="starship">
-<ion-card-content>
-{{ starship.name }}
-</ion-card-content>
+  <ion-card *ngIf="starship">
+    <ion-card-content>
+      Name: {{ starship.name }}
+    </ion-card-content>
+    <ion-card-content>
+      Model: {{ starship.model }}
+    </ion-card-content>
+    <ion-card-content>
+      Length: {{ starship.length }}
+    </ion-card-content>
+    <ion-card-content>
+      Passengers: {{ starship.passengers}}
+    </ion-card-content>
 
+  </ion-card>
 </ion-content>
