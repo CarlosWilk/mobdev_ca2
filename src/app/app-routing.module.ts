@@ -18,7 +18,7 @@ const routes: Routes = [
   {
     path: 'spaceship-details',
     loadChildren: () => import('./pages/spaceship-details/spaceship-details.module').then( m => m.SpaceshipDetailsPageModule)
-  }
+  },
 ];
 
 @NgModule({
